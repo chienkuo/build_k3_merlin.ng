@@ -58,7 +58,7 @@ jobs:
     - name: Clone source code
       run: |       
         git clone https://github.com/RMerl/asuswrt-merlin
-        git clone https://github.com/godcong/asuswrt-merlin.ng
+        git clone https://github.com/cheinkuo/asuswrt-merlin.ng
         git clone https://github.com/godcong/k3screenctrl asuswrt-merlin.ng/release/src/router/k3screenctrl 
         git clone https://github.com/RMerl/am-toolchains.git
                 
@@ -112,7 +112,7 @@ jobs:
         tag: build_${{ env.MERLIN_TAG }}
         body: |
           this is only a latest build from master
-          version: https://github.com/godcong/asuswrt-merlin.ng/commit/${{ env.MERLIN_VERSION }}
+          version: https://github.com/chienkuo/asuswrt-merlin.ng/commit/${{ env.MERLIN_VERSION }}
         token: ${{ secrets.GITHUB_TOKEN }}
         draft: false
         prerelease: false
